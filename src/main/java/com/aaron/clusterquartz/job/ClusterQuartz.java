@@ -14,8 +14,8 @@ public class ClusterQuartz
 {
     public void printUserInfo()
     {
-        System.out.println("***      start " + DateUtils.dateToString(new Date(), "yyyy-MM-dd HH:mm:ss:SSS") + "    *************");
-
+//        System.out.println("***      start " + DateUtils.dateToString(new Date(), "yyyy-MM-dd HH:mm:ss:SSS") + "    *************");
+        System.out.println(new Date().toString());
         System.out.println("*");
         System.out.println("*        current username is " + System.getProperty("user.name"));
         System.out.println("*        current os name is " + System.getProperty("os.name"));

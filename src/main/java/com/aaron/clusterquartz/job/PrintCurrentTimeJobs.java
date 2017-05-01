@@ -24,11 +24,11 @@ public class PrintCurrentTimeJobs extends QuartzJobBean
 
     protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException
     {
-        LOG_RECORD.info("begin to execute task," + DateUtils.dateToString(new Date()));
+        LOG_RECORD.info("begin to execute task," + new Date().toString());
 
         clusterQuartz.printUserInfo();
 
-        LOG_RECORD.info("end to execute task," + DateUtils.dateToString(new Date()));
+        LOG_RECORD.info("end to execute task," +new Date().toString());
 
     }
 }
